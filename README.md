@@ -19,7 +19,7 @@ pip install -r requirements.txt
 L'application Streamlit appelle l'API sur le port `8001`.
 
 ```powershell
-python -m uvicorn apitest:app --port 8001 --reload
+python -m uvicorn api:app --port 8001 --reload
 ```
 
 ouvrir `http://127.0.0.1:8001/` 
