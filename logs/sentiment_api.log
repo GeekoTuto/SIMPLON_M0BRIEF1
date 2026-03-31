@@ -1,0 +1,2 @@
+2026-03-31 11:25:02.913 | INFO     | apitest:analyse_sentiment:30 - Requête : texte='J'adore ce produit'
+2026-03-31 11:25:19.465 | INFO     | apitest:analyse_sentiment:30 - Requête : texte='C'est super'
