@@ -1,6 +1,9 @@
 # SIMPLON_M0BRIEF1
 
-Application d'Analyse de sentiment. L'utilisateur entre un texte en anglais et l'application analysera quel sentiment s'en dégage.
+## Fonctionnalités
+- Dans l'onglet app : Application d'Analyse de sentiment. L'utilisateur entre un texte en anglais et l'application analysera quel sentiment s'en dégage.
+
+- Dans l'onglet Segmentation : L'application peut charger une image afin de l'analyser et de créer plusieurs segments qui seront analysés 1 par 1. Une description globale sera faites par la suite en fonction de ces différents segments 
 
 ## Prerequis
 
