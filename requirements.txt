@@ -3,6 +3,8 @@ uvicorn[standard]
 streamlit
 transformers
 torch
+torchvision
+sentencepiece
 requests
 loguru
 nltk

@@ -13,16 +13,11 @@ def get_sentiment_text(compound_score: float) -> str:
 		return "Sentiment global : Négatif 🙁"
 	return "Sentiment global : Neutre 😐"
 
-#@st.cache_resource
-#def setup_logger():
-#    logger.add("logs/sentiment_streamlit.log", rotation="500 MB", level="INFO")
-
-#setup_logger()
-
 logger.remove()
 logger.add("logs/sentiment_streamlit.log", rotation="500 MB", level="INFO")
 
 st.set_page_config(page_title="Analyse de sentiments", layout="centered")
+
 
 st.title("Analyse de sentiments")
 st.write("Entrez un texte")

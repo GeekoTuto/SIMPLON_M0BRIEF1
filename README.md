@@ -96,3 +96,28 @@ tests/test_api.py::test_home PASSED                                             
 tests/test_api.py::test_analyse_sentiment_positive PASSED                                                                      [ 66%] 
 tests/test_api.py::test_analyse_sentiment_negative PASSED    
 ```
+
+# Application d'analyse d'image
+
+## Description
+Cette application Streamlit permet à l’utilisateur de charger une image, de réaliser une segmentation de l'image, de décrire les principaux segments, de faire un résumé de l'image
+
+## Architecture
+
+### Frontend (Streamlit)
+- Upload d’images (`jpg`, `png`, `jpeg`)  
+- Affichage de l’image originale  
+- Affichage de la carte de segmentation colorée  
+- Liste des 5 classes principales détectées
+- Affichage de la description globale de l’image et du résumé  
+
+
+- **Segmentation** : `SegformerForSemanticSegmentation` 
+- **Description d’image** : `BLIPForConditionalGeneration`
+- **Résumé** : `DistilBART`
+
+### Comment ça marche :  
+1. L’utilisateur charge une image → Segformer génère la segmentation  
+2. Les 5 classes principales sont déterminées en fonction du nombre de pixels  
+3. BLIP génère une description globale de l’image
+4. La description et les classes principales sont utilisées par DistilBart pour produire un résumé 
