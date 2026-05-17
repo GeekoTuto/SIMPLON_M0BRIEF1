@@ -1,36 +1,55 @@
-2026-03-31 11:25:02.913 | INFO     | apitest:analyse_sentiment:30 - Requête : texte='J'adore ce produit'
-2026-03-31 11:25:19.465 | INFO     | apitest:analyse_sentiment:30 - Requête : texte='C'est super'
-2026-03-31 11:34:55.378 | INFO     | api:analyse_sentiment:30 - Requête : texte='test'
-2026-03-31 11:43:01.275 | INFO     | api:analyse_sentiment:30 - Requête : texte='c'est complètement nul'
-2026-03-31 11:43:08.733 | INFO     | api:analyse_sentiment:30 - Requête : texte='je n'aime pas'
-2026-03-31 11:43:17.045 | INFO     | api:analyse_sentiment:30 - Requête : texte='je suis dégouté'
-2026-03-31 11:43:28.385 | INFO     | api:analyse_sentiment:30 - Requête : texte='i hate this product'
-2026-03-31 11:49:02.945 | INFO     | api:analyse_sentiment:30 - Requête : texte='test'
-2026-03-31 11:49:15.272 | INFO     | api:analyse_sentiment:30 - Requête : texte='hate you'
-2026-03-31 11:49:53.874 | INFO     | api:analyse_sentiment:30 - Requête : texte='test'
-2026-03-31 12:04:35.451 | INFO     | api:analyse_sentiment:30 - Requête : texte='
-test'
-2026-03-31 12:05:20.328 | INFO     | api:analyse_sentiment:30 - Requête : texte='test'
-2026-03-31 13:08:07.408 | INFO     | api:analyse_sentiment:30 - Requête : texte='hate you'
-2026-03-31 13:08:23.972 | INFO     | api:analyse_sentiment:30 - Requête : texte='I really hate this product'
-2026-03-31 13:13:42.727 | INFO     | api:home:24 - Test api
-2026-03-31 13:14:22.138 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'disgusting'
-2026-03-31 13:37:40.131 | INFO     | api:home:24 - Test api
-2026-03-31 13:38:21.812 | INFO     | api:home:24 - Test api
-2026-03-31 13:38:21.818 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'Love this app !'
-2026-03-31 13:42:07.934 | INFO     | api:home:24 - Test api
-2026-03-31 13:42:07.965 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'Love this app !'
-2026-03-31 13:42:07.970 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'I hate this app !'
-2026-03-31 13:42:41.848 | INFO     | api:home:24 - Test api
-2026-03-31 13:42:41.875 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'Love this app !'
-2026-03-31 13:42:41.881 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'I hate this app !'
-2026-03-31 13:55:58.818 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'test'
-2026-03-31 13:56:08.392 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'je te déteste'
-2026-03-31 13:56:17.320 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'i hate you'
-2026-03-31 14:08:15.514 | INFO     | api:home:24 - Test api
-2026-03-31 14:08:15.520 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'I Love this app !'
-2026-03-31 14:08:15.525 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'I hate this app !'
-2026-03-31 14:08:26.503 | INFO     | api:home:24 - Test api
-2026-03-31 14:08:26.510 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'I Love this app !'
-2026-03-31 14:08:26.515 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'I hate this app !'
-2026-03-31 14:08:26.520 | INFO     | api:analyse_sentiment:30 - Requête : texte à analyser = 'I feel normal.'
+2026-04-01 23:15:22.177 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 12eb3f99-8f2a-4863-a46c-0fd20bcd0824 : texte à analyser = 'test'
+2026-04-01 23:15:22.177 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 12eb3f99-8f2a-4863-a46c-0fd20bcd0824 : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-07 13:43:32.562 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête b9a120e1-bd79-4813-ad97-bdb39146557d : texte à analyser = 'test'
+2026-04-07 13:43:32.562 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête b9a120e1-bd79-4813-ad97-bdb39146557d : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-21 10:58:23.501 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête d1216d91-967c-4b81-ba60-e6d57e0a8493 : texte à analyser = 'test'
+2026-04-21 10:58:23.501 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête d1216d91-967c-4b81-ba60-e6d57e0a8493 : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-21 10:58:27.152 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête cd553d9e-0543-4a2e-84ce-954a4f32e174 : texte à analyser = 'shit'
+2026-04-21 10:58:27.153 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête cd553d9e-0543-4a2e-84ce-954a4f32e174 : Résultat = {'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.5574}
+2026-04-21 10:58:40.998 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête ae4122d8-82e7-44b2-88ab-bba746e43e0a : texte à analyser = 'fuck this is awesome
+'
+2026-04-21 10:58:41.029 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête ae4122d8-82e7-44b2-88ab-bba746e43e0a : Résultat = {'neg': 0.365, 'neu': 0.208, 'pos': 0.427, 'compound': 0.1531}
+2026-04-21 10:58:48.245 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 742454ad-3434-4d06-b64d-744560c91190 : texte à analyser = 'fuck this'
+2026-04-21 10:58:48.245 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 742454ad-3434-4d06-b64d-744560c91190 : Résultat = {'neg': 0.778, 'neu': 0.222, 'pos': 0.0, 'compound': -0.5423}
+2026-04-21 07:54:34.446 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 96dca97f-35b4-446b-9d77-a77368c5fccf : texte à analyser = 'test'
+2026-04-21 07:54:34.447 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 96dca97f-35b4-446b-9d77-a77368c5fccf : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-21 07:54:41.608 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 80d8a2bf-e9f8-4fec-bb4e-57e1185d1d81 : texte à analyser = 'shit'
+2026-04-21 07:54:41.609 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 80d8a2bf-e9f8-4fec-bb4e-57e1185d1d81 : Résultat = {'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.5574}
+2026-04-22 07:28:40.335 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête e8c2fdbb-1b70-41b2-bb97-19504eb1e116 : texte à analyser = 'test'
+2026-04-22 07:28:40.336 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête e8c2fdbb-1b70-41b2-bb97-19504eb1e116 : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-22 07:31:19.686 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 4fad9a3d-c85b-43e1-acf6-d9189e1341a0 : texte à analyser = 'test'
+2026-04-22 07:31:19.687 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 4fad9a3d-c85b-43e1-acf6-d9189e1341a0 : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-22 07:31:23.438 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête d2ccc8e6-496e-4b8d-b909-f1ade35f877d : texte à analyser = 'nul'
+2026-04-22 07:31:23.438 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête d2ccc8e6-496e-4b8d-b909-f1ade35f877d : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-22 07:31:25.862 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 51d75e08-9dbb-4409-83fb-0ae7bb7099e3 : texte à analyser = 'bad'
+2026-04-22 07:31:25.862 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 51d75e08-9dbb-4409-83fb-0ae7bb7099e3 : Résultat = {'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.5423}
+2026-04-22 07:35:27.603 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête d72f9a5d-2fe8-422a-8c8d-2386ba6bc13c : texte à analyser = 'test'
+2026-04-22 07:35:27.603 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête d72f9a5d-2fe8-422a-8c8d-2386ba6bc13c : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-22 07:35:55.886 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 79e835a9-ef35-49a9-898e-58ac6a0bfa72 : texte à analyser = 'test'
+2026-04-22 07:35:55.887 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 79e835a9-ef35-49a9-898e-58ac6a0bfa72 : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-22 07:42:45.214 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 53418ebe-033f-4389-9064-7dd33f84be2a : texte à analyser = 'test'
+2026-04-22 07:42:45.215 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 53418ebe-033f-4389-9064-7dd33f84be2a : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-04-22 07:42:49.347 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête 9951e62b-e408-440a-85c0-21c1f4fb4032 : texte à analyser = 'bad'
+2026-04-22 07:42:49.347 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête 9951e62b-e408-440a-85c0-21c1f4fb4032 : Résultat = {'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.5423}
+2026-04-22 07:44:15.161 | INFO     | controllers.sentiment_controller:home:20 - Test api
+2026-04-22 07:44:15.163 | INFO     | controllers.sentiment_controller:home:20 - Test api
+2026-05-11 05:49:50.846 | INFO     | controllers.sentiment_controller:home:20 - Test api
+2026-05-11 05:50:45.452 | INFO     | controllers.sentiment_controller:analyse_sentiment:27 - Requête f1864697-0feb-4b83-b735-e6f2a3d480de : texte à analyser = 'I hate trump'
+2026-05-11 05:50:45.453 | INFO     | controllers.sentiment_controller:analyse_sentiment:36 - Requête f1864697-0feb-4b83-b735-e6f2a3d480de : Résultat = {'neg': 0.787, 'neu': 0.213, 'pos': 0.0, 'compound': -0.5719}
+2026-05-11 10:14:43.470 | INFO     | controllers.sentiment_controller:home:20 - Test api
+2026-05-11 10:16:47.539 | INFO     | controllers.sentiment_controller:home:21 - Test api
+2026-05-11 11:31:14.866 | INFO     | controllers.sentiment_controller:home:29 - Test api
+2026-05-11 16:21:50.340 | INFO     | controllers.sentiment_controller:home:29 - Test api
+2026-05-11 17:02:23.021 | INFO     | controllers.sentiment_controller:home:29 - Test api
+2026-05-12 11:21:49.845 | INFO     | controllers.sentiment_controller:home:29 - Test api
+2026-05-12 11:22:21.591 | INFO     | controllers.sentiment_controller:analyse_sentiment:35 - Requête 97daa61d-2344-4cd5-9c3c-3ab90dbd3e46 : texte à analyser = 'salaud'
+2026-05-12 11:22:21.591 | INFO     | controllers.sentiment_controller:analyse_sentiment:44 - Requête 97daa61d-2344-4cd5-9c3c-3ab90dbd3e46 : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-05-12 11:22:33.264 | INFO     | controllers.sentiment_controller:analyse_sentiment:35 - Requête 5f92cf7c-5508-4979-8ecf-edb0d4eac4a0 : texte à analyser = 'bullshit'
+2026-05-12 11:22:33.264 | INFO     | controllers.sentiment_controller:analyse_sentiment:44 - Requête 5f92cf7c-5508-4979-8ecf-edb0d4eac4a0 : Résultat = {'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.5859}
+2026-05-12 11:28:42.155 | INFO     | controllers.sentiment_controller:analyse_sentiment:35 - Requête 96235ef0-466b-458e-b272-f186acf968b9 : texte à analyser = 'test
+'
+2026-05-12 11:28:42.156 | INFO     | controllers.sentiment_controller:analyse_sentiment:44 - Requête 96235ef0-466b-458e-b272-f186acf968b9 : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
+2026-05-13 10:36:00.990 | INFO     | controllers.sentiment_controller:analyse_sentiment:37 - Requête 1bb6b00b-f3c8-4907-b790-66a57f169793 : texte à analyser = 'hate trump'
+2026-05-13 10:36:00.996 | INFO     | controllers.sentiment_controller:analyse_sentiment:46 - Requête 1bb6b00b-f3c8-4907-b790-66a57f169793 : Résultat = {'neg': 0.787, 'neu': 0.213, 'pos': 0.0, 'compound': -0.5719}
+2026-05-13 10:36:58.774 | INFO     | controllers.sentiment_controller:analyse_sentiment:37 - Requête 67c650a0-5a4b-4ae3-a2e7-1ad21a4605e1 : texte à analyser = 'je déteste la kpop'
+2026-05-13 10:36:58.780 | INFO     | controllers.sentiment_controller:analyse_sentiment:46 - Requête 67c650a0-5a4b-4ae3-a2e7-1ad21a4605e1 : Résultat = {'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}

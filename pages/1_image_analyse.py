@@ -5,11 +5,13 @@ import requests
 from loguru import logger
 from PIL import Image
 import streamlit as st
+import os
 
 logger.remove()
 logger.add("logs/analyse_image.log", rotation="500 MB", level="INFO")
 
-API_URL = "http://127.0.0.1:8001/analyse_image/"
+API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
+API_URL = os.getenv("API_IMAGE_URL", f"{API_BASE_URL}/analyse_image/")
 
 st.title("Segmentation d'image")
 api_url = st.text_input("URL API image", value=API_URL)

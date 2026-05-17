@@ -2,8 +2,10 @@ import requests
 import streamlit as st
 from loguru import logger
 from pathlib import Path
+import os
 
-API_URL = "http://127.0.0.1:8001/analyse_sentiment/"
+API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
+API_URL = os.getenv("API_URL", f"{API_BASE_URL}/analyse_sentiment/")
 
 
 def get_sentiment_text(compound_score: float) -> str:
