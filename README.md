@@ -1,5 +1,10 @@
 # SIMPLON_M0BRIEF1
 
+## Fonctionnalités
+- Dans l'onglet app : Application d'Analyse de sentiment. L'utilisateur entre un texte en anglais et l'application analysera quel sentiment s'en dégage.
+
+- Dans l'onglet Segmentation : L'application peut charger une image afin de l'analyser et de créer plusieurs segments qui seront analysés 1 par 1. Une description globale sera faites par la suite en fonction de ces différents segments 
+
 ## Prerequis
 
 - Python
@@ -36,6 +41,49 @@ L'URL concernée par la requête post du Front :
 http://127.0.0.1:8001/analyse_sentiment/
 ```
 
+## Architecture
+
+### Structure globale
+
+Architecture **API + Client** :
+
+```
+Client Streamlit (app.py)
+        ↓ (requête POST)
+    API FastAPI (api.py)
+        ↓ (traitement)
+    Moteur VADER
+        ↓ (scores)
+    Réponse JSON
+```
+
+### Composants
+
+#### 1. **API FastAPI** (`api.py`)
+L'API REST qui traite l'analyse de sentiment :
+- **Port** : 8001
+- **GET** `/` : Vérification que l'API est fonctionnelle
+- **POST** `/analyse_sentiment/` : Analyse le texte fourni
+  - Entrée : texte JSON (`{"text": "..."}`).
+  - Sortie : scores de sentiment sous forme JSON
+    - `neg` : score de négativité
+    - `neu` : score de neutralité
+    - `pos` : score de positivité
+    - `compound` : score global
+- **Analyse** : VADER 
+
+#### 2. **Interface Streamlit** (`app.py`)
+Application web interactive pour l'utilisateur :
+- Champ de saisie : l'utilisateur entre un texte en **anglais**
+- Bouton "Analyser" : envoie une requête POST à l'API
+- Affichage des résultats :
+  - Interprétation globale du sentiment (Positif 😀 / Neutre 😐 / Négatif 🙁)
+
+#### 3. **Logging**
+Système de log :
+- `logs/sentiment_api.log` : logs de l'API 
+- `logs/sentiment_streamlit.log` : logs client
+
 ## Tests unitaires
 
 ```powershell
@@ -48,3 +96,34 @@ tests/test_api.py::test_home PASSED                                             
 tests/test_api.py::test_analyse_sentiment_positive PASSED                                                                      [ 66%] 
 tests/test_api.py::test_analyse_sentiment_negative PASSED    
 ```
+
+# Application d'analyse d'image
+
+## Description
+Cette application Streamlit permet à l’utilisateur de charger une image, de réaliser une segmentation de l'image, de décrire les principaux segments, de faire un résumé de l'image
+
+## Architecture
+
+### Frontend (Streamlit)
+- Upload d’images (`jpg`, `png`, `jpeg`)  
+- Affichage de l’image originale  
+- Affichage de la carte de segmentation colorée  
+- Liste des 5 classes principales détectées
+- Affichage de la description globale de l’image et du résumé  
+
+### Backend (FastAPI)
+- Endpoint `POST /analyse_image/` (multipart/form-data)
+- Segmentation avec SegFormer
+- Description globale et par segment avec BLIP
+- Résumé avec Distilbart
+
+
+- **Segmentation** : `SegformerForSemanticSegmentation` 
+- **Description d’image** : `BLIPForConditionalGeneration`
+- **Résumé** : `Distilbart`
+
+### Comment ça marche :  
+1. L’utilisateur charge une image → Segformer génère la segmentation  
+2. Les 5 classes principales sont déterminées en fonction du nombre de pixels  
+3. BLIP génère une description globale de l’image
+4. La description et les classes principales sont utilisées par DistilBart pour produire un résumé 

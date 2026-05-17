@@ -3,7 +3,25 @@ uvicorn[standard]
 streamlit
 transformers
 torch
+torchvision
+sentencepiece
+numpy==1.26
+pillow
 requests
 loguru
 nltk
 pytest
+python-multipart
+psutil
+pandas
+scikit-learn
+sqlalchemy
+alembic
+mlflow
+psycopg2-binary
+fasttext>=0.9.2
+langdetect
+beautifulsoup4
+sympy
+spacy
+fr-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_lg-3.8.0/fr_core_news_lg-3.8.0-py3-none-any.whl

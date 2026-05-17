@@ -1,0 +1,8 @@
+FROM python:3.12.10
+WORKDIR /app
+# Copier uniquement les requirements nécessaires à Streamlit
+COPY requirements_streamlit.txt .
+RUN pip install -r requirements_streamlit.txt
+COPY . .
+EXPOSE 8501
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]

@@ -1,0 +1,8 @@
+streamlit
+requests
+loguru
+pillow
+numpy
+torch
+transformers
+sentencepiece
